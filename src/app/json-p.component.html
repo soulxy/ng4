@@ -1,5 +1,5 @@
-<p>this json-p page</p>
-<ul>
+<p>This json-p page</p>
+<ul class='book-ul'>
     <li *ngFor='let book of bookList; index as i, odd as isOdd' (click)='onClickBook(book,bookList)'>
         <a [class.selected]='book.selected'>{{book.name}}</a>
         <p>{{book.price}}</p>
@@ -7,3 +7,13 @@
         <p *ngIf='isOdd'>奇数</p>
     </li>
 </ul>
+<hr>
+<h3>Basic Buttons</h3>
+<div class="button-row">
+  <button md-button>Basic</button>
+  <button md-button color="primary">Primary</button>
+  <button md-button color="accent">Accent</button>
+  <button md-button color="warn">Warn</button>
+  <button md-button disabled>Disabled</button>
+  <a md-button routerLink=".">Link</a>
+</div>

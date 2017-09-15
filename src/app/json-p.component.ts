@@ -1,13 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule , ViewEncapsulation} from '@angular/core';
+import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 
+@NgModule({
+  declarations: [
+  ],
+  imports: [
+    MdButtonModule, MdCheckboxModule
+  ],
+  providers: []
+})
 @Component({
     selector: 'json-p',
     templateUrl: './json-p.component.html',
-    styleUrls: ['./json-p.component.css']
+    styleUrls: ['./json-p.component.scss'],
+    encapsulation: ViewEncapsulation.None,
 })
 
 export class JsonPComponent implements OnInit {
     bookList: any[];
+
+    //material design
+
     ngOnInit(): void {
         let arr: any[] = [];
         for(let i in [1,2,3]) {
@@ -24,4 +37,5 @@ export class JsonPComponent implements OnInit {
       book.selected = true;
       console.log('selected book:', book);
     }
+    
 }
