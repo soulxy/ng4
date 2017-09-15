@@ -8,7 +8,7 @@
     </li>
 </ul>
 <hr>
-<h3>Basic Buttons</h3>
+<h3>material design: Basic Buttons</h3>
 <div class="button-row">
   <button md-button>Basic</button>
   <button md-button color="primary">Primary</button>
@@ -16,4 +16,17 @@
   <button md-button color="warn">Warn</button>
   <button md-button disabled>Disabled</button>
   <a md-button routerLink=".">Link</a>
+</div>
+<hr>
+<h3>include angular flex</h3>
+<div fxLayout="column">
+  <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
+    <h3>
+      {{title}}
+    </h3>
+  </div>
+  <div fxLayout="row">
+    <div class="left" fxFlex="20"> LEFT: 20% wide </div>
+    <div class="right" fxFlex> RIGHT: 80% wide </div>
+  </div>
 </div>

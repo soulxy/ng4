@@ -45,3 +45,9 @@
   align-items: center;
   justify-content: space-around;
 }
+[fxLayout="column"] { border: 1px solid;padding:4px;},
+[fxFlex]{  padding:5px;},
+h3      {  padding-top:20px; },
+.header {  background-color: lightyellow;  },
+.left   {  background-color: lightblue;  },
+.right  {  background-color: pink;  }
