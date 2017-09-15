@@ -1,0 +1,9 @@
+<p>this json-p page</p>
+<ul>
+    <li *ngFor='let book of bookList; index as i, odd as isOdd' (click)='onClickBook(book,bookList)'>
+        <a [class.selected]='book.selected'>{{book.name}}</a>
+        <p>{{book.price}}</p>
+        <p *ngIf='i==0'>is first book.</p>
+        <p *ngIf='isOdd'>奇数</p>
+    </li>
+</ul>
