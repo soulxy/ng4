@@ -1,0 +1,43 @@
+sudo: required
+dist: trusty
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+language: node_js
+# nodejs版本
+node_js:
+  - "6"
+env:
+    #- EMBER_VERSION=default
+    #- EMBER_VERSION=release
+    #- EMBER_VERSION=beta
+    #- EMBER_VERSION=canary
+before_install:
+# 无其他依赖项所以执行npm run build 构建就行了
+install:
+    - mkdir travis-phantomjs
+    - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+    - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
+    - export PATH=$PWD/travis-phantomjs:$PATH
+    - npm install
+script:
+    - ng build --proxy-config proxy.conf.json
+after_script:
+  #- cd ./dist
+  #- git init
+  #- git config user.name "${U_NAME}"
+  #- git config user.email "${U_EMAIL}"
+  #- git add .
+  #- git commit -m "Update tools"
+  #- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+# E: Build LifeCycle
+branches:
+  only:
+    - master
+env:
+ global:
+   # 我将其添加到了travis-ci的环境变量中
+   #- GH_REF: github.com/yimogit/metools.git    
