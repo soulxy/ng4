@@ -8,16 +8,6 @@
     </li>
 </ul>
 <hr>
-<h3>material design: Basic Buttons</h3>
-<div class="button-row">
-  <button md-button (click)='getAmaZonData()'>get amazon data</button>
-  <button md-button color="primary">Primary</button>
-  <button md-button color="accent">Accent</button>
-  <button md-button color="warn">Warn</button>
-  <button md-button disabled>Disabled</button>
-  <a md-button routerLink=".">Link</a>
-</div>
-<hr>
 <h3>include angular flex</h3>
 <div fxLayout="column">
   <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
@@ -39,6 +29,16 @@
 <p class="e2e-inner-html-interpolated">{{htmlSnippet}}</p>
 <p>Result of binding to innerHTML:</p>
 <p class="e2e-inner-html-bound" [innerHTML]="htmlSnippet"></p>
+<hr>
+<h3>material design: Basic Buttons</h3>
+<div class="button-row">
+  <button md-button (click)='getAmaZonData()'>get amazon data</button>
+  <button md-button color="primary">Primary</button>
+  <button md-button color="accent">Accent</button>
+  <button md-button color="warn">Warn</button>
+  <button md-button disabled>Disabled</button>
+  <a md-button routerLink=".">Link</a>
+</div>
 <hr>
 <h3>https get : test demo</h3>
 <section>success:-->{{jsonPObj.jsonData}}</section>
