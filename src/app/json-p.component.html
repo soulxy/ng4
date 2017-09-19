@@ -41,6 +41,9 @@
 </div>
 <hr>
 <h3>https get : test demo</h3>
-<section>success:-->{{jsonPObj.jsonData}}</section>
+<section>success:-->{{jsonPObj.jsonData | json}}</section>
 <section *ngIf='jsonPObj.hasHttpError'>error</section>
+<hr>
+<h3>子组件</h3>
+<app-code-tree [code]='jsonPObj.jsonData' *ngIf='jsonPObj.jsonData'></app-code-tree>
 
