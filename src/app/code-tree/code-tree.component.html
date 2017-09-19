@@ -1,0 +1,15 @@
+<p>
+  code-tree works!
+</p>
+<div *ngIf='code' class='flex-dis'>
+	<p>customerID:{{code.customerInfo.customerID}}</p>
+	<div>
+		<p [innerHTML]='trustedTemplate'></p>
+		{{code.templates.legacyImageInfoDisplayComp}}
+	</div>
+</div>
+<div>
+	<ul>
+		<li *ngFor='let tree of treeArr'>{{tree.id}}:{{tree.name}}</li>
+	</ul>
+</div>
