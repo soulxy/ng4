@@ -1,0 +1,9 @@
+.flex-dis {
+	display: flex;
+}
+.flex-dis > p{
+	width: 180px;
+}
+.flex-dis > div {
+	flex: 1;
+}
