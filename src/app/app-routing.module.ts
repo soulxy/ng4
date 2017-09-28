@@ -1,7 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { SelectivePreloadingStrategy } from './@common/service/selective-preloading-strategy.service';
+import { SelectivePreloadingStrategyService } from './@common/service/selective-preloading-strategy.service';
 // import { RootComponent } from './root/root.component';
 // import { HomeComponent }   from './home/home.component';
 // import { MaterialComponent }   from './material/material.component';
@@ -41,13 +41,13 @@ const routes: Routes = [
 @NgModule({
   imports: [ RouterModule.forRoot(routes, { 
     enableTracing: true,//debugging  url
-    preloadingStrategy: SelectivePreloadingStrategy })],
+    preloadingStrategy: SelectivePreloadingStrategyService })],
   exports: [ RouterModule ],
   declarations: [
     PageNotFoundComponent
   ],
   providers: [
-    SelectivePreloadingStrategy
+    SelectivePreloadingStrategyService
   ]
 })
 export class AppRoutingModule {}
