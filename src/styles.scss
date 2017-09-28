@@ -1,2 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'app/@common/style/var';
+@import 'app/@common/style/base';
+@import 'app/@common/style/common';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
