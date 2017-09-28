@@ -1,0 +1,60 @@
+.example-sidenav-fab-container {
+  width: 900px;
+  height: 800px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-fab-container md-sidenav {
+  max-width: 200px;
+}
+
+.example-sidenav-fab-container .mat-sidenav-content,
+.example-sidenav-fab-container md-sidenav {
+  display: flex;
+  overflow: visible;
+}
+
+.example-scrolling-content {
+  overflow: auto;
+}
+
+.example-fab {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.scrolling-nav {
+  > a {
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover { 
+      background: #ddd;
+    }
+  }
+}
+
+.example-sidenav-fab-container {
+  .all-toggle-icon {
+    z-index: 9999;
+    position: fixed;
+  }
+  .nav-section {
+    border-right: 1px solid #eee;
+  }
+  .all-section-content {
+    img[md-card-image] {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .example-icon {
+    padding: 0 14px;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+}

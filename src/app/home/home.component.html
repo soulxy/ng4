@@ -1,0 +1,12 @@
+<p>
+  home works!
+</p>
+<md-tab-group>
+  <md-tab label="Tab 1">Content 1</md-tab>
+  <md-tab label="Tab 2">Content 2</md-tab>
+</md-tab-group>
+<hr>
+<p>离开guard测试</p>
+<input [(ngModel)]="name" #ctrl="ngModel" required>
+<p>Value: {{ name }}</p>
+<p>Valid: {{ ctrl.valid }}</p>

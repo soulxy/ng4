@@ -1,0 +1,33 @@
+<section class='root-section'>
+  <div class='root-section-header'>
+    <md-toolbar color="primary">
+      <span class='system-title'>My App</span>
+      <md-icon class="example-icon toggle-menu-icon" (click)='rootNav=!rootNav'>dehaze</md-icon>
+    </md-toolbar>
+  </div>
+  <div class='root-section-body'>
+    <div class='root-section-body-left' [class.menu-collapsed]='rootNav'>
+      <nav class='icon-word-group root-nav'>
+        <a routerLink='/home' routerLinkActive='active' [routerLinkActiveOptions]="{exact:true}">
+          <md-icon>home</md-icon>
+          <span>Home</span>
+        </a>
+        <a routerLink='/material' routerLinkActive='active' [routerLinkActiveOptions]="{exact:true}">
+          <md-icon>camera</md-icon>
+          <span>Material Design</span>
+        </a>
+        <a routerLink='/chart' routerLinkActive='active' [routerLinkActiveOptions]="{exact:true}">
+          <md-icon>equalizer</md-icon>
+          <span>chart</span>
+        </a>
+        <a routerLink='/auth' routerLinkActive='active' [routerLinkActiveOptions]="{exact:true}">
+          <md-icon>verified_user</md-icon>
+          <span>auth</span>
+        </a>
+      </nav>
+    </div>
+    <div class='root-section-body-right'>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>

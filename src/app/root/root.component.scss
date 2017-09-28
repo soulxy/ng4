@@ -1,0 +1,54 @@
+@import '../@common/style/var';
+@import '../@common/style/common';
+.root-section {
+  .root-section-header {
+    .system-title {
+      padding: 0px 20px;
+      display: inline-block;
+      width: 110px;
+      text-align: center;
+    }
+    .system-title + md-icon {
+      margin-left: 20px;
+    }
+    .toggle-menu-icon {
+      cursor: pointer;
+    }
+  }
+  .root-section-body {
+    min-height: 700px;
+    display: flex;
+    .root-section-body-left {
+      width: 180px;
+      background: $primary-color;
+    }
+    .root-section-body-left.menu-collapsed {
+      width: 36px;
+    }
+    .root-section-body-right {
+      flex: 1;
+    }
+  }
+}
+
+.root-section-body-left {
+  nav a {
+    padding: 10px 10px;
+    color: #fff;
+    font-size: $little-font-size;
+    md-icon, .material-icons {
+      margin-right: 10px;
+    }
+    .material-icons.mat-icon {
+      @include md-icon-size($large-font-size);
+    }
+  }
+  .root-nav a.active {
+    background: $word-color;
+  }
+}
+.root-section-body-left.menu-collapsed {
+  nav span {
+    display: none;
+  }
+}

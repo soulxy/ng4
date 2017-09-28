@@ -1,0 +1,31 @@
+.icon-word-group {
+  > a  {
+    display: flex;
+    align-items: center;
+  }
+}
+@mixin md-icon-size($size: 24px) {
+  font-size: $size;
+  height: $size;
+  width: $size;
+}
+@media (max-width: 500px) {
+  .root-section-body-left {
+    opacity: 0.87;
+    position: absolute;
+    height: 100%;
+    z-index: 99;
+    display: none;
+  }
+  .root-section-body-left.menu-collapsed {
+    display: block;
+    width: 180px!important;
+    nav span {
+      display: inline-block!important;
+    }
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 500px) {}
+
+@media (min-width: 1200px) {}
