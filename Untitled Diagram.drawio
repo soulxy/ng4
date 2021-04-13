@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-13T03:43:47.531Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="XkTFo4XHAcxm7YIQk0Iw" version="14.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-13T03:50:56.280Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="2mWwJgW8YvQgYJ2-Hqj-" version="14.5.3" type="github">
   <diagram id="2YU1mLC71ZaFPqUyA7jv" name="Page-1">
-    <mxGraphModel dx="1360" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1360" dy="834" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,6 +48,14 @@
         <mxCell id="SAPhj2jainKKI0kJMRds-14" value="首页界面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="800" width="120" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="SAPhj2jainKKI0kJMRds-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SAPhj2jainKKI0kJMRds-16" target="SAPhj2jainKKI0kJMRds-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="900" />
+              <mxPoint x="720" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="SAPhj2jainKKI0kJMRds-16" value="点击子应用菜单" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="880" width="120" height="40" as="geometry" />
         </mxCell>
@@ -72,7 +80,10 @@
         <mxCell id="SAPhj2jainKKI0kJMRds-25" value="启动" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="870" y="610" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="SAPhj2jainKKI0kJMRds-26" value="获取权限、菜单" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SAPhj2jainKKI0kJMRds-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SAPhj2jainKKI0kJMRds-26" target="SAPhj2jainKKI0kJMRds-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SAPhj2jainKKI0kJMRds-26" value="获取权限" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="800" y="720" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SAPhj2jainKKI0kJMRds-27" value="渲染界面" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -81,7 +92,12 @@
         <mxCell id="SAPhj2jainKKI0kJMRds-29" value="注册" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="640" y="770" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="SAPhj2jainKKI0kJMRds-30" value="首页界面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SAPhj2jainKKI0kJMRds-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SAPhj2jainKKI0kJMRds-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="799" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SAPhj2jainKKI0kJMRds-30" value="预置永久token" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="720" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SAPhj2jainKKI0kJMRds-32" value="是" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -89,6 +105,15 @@
         </mxCell>
         <mxCell id="SAPhj2jainKKI0kJMRds-35" value="否" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="860" y="690" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SAPhj2jainKKI0kJMRds-37" value="首页界面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SAPhj2jainKKI0kJMRds-39" value="渲染界面" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="770" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SAPhj2jainKKI0kJMRds-41" value="首页界面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="965" y="800" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
