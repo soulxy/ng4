@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-27T11:48:07.065Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="ATMnI382DCVI41JEgFzZ" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-27T11:50:34.009Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="nPPy8UJUtefZHOCppS_e" version="14.6.1" type="github">
   <diagram id="T_wgZtGjV1-MeDOwSWs3" name="Page-1">
-    <mxGraphModel dx="643" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1572" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -81,6 +81,12 @@
         </mxCell>
         <mxCell id="9qD8Qi3YVw1oicKCHrEl-27" value="初始化国际化配置(I18NModule)&lt;br&gt;初始化权限配置（PermissionModule）&lt;br&gt;初始化拦截器配置（HttpInterceptorsModule）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="230" width="247" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9qD8Qi3YVw1oicKCHrEl-28" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="200" width="223" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9qD8Qi3YVw1oicKCHrEl-29" value="容量管道（CapacityPipe）&lt;br&gt;空处理管道（NilPipe）&lt;br&gt;高亮管道（HighLightPipe）&lt;br&gt;百分比（PercentagePipe）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1443" y="230" width="220" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
